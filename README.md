@@ -1,1 +1,1 @@
-# basic scritps
+# basic scritps in python
