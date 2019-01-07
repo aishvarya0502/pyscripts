@@ -1,1 +1,0 @@
-# basic scritps in python

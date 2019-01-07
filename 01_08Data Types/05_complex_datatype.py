@@ -19,8 +19,10 @@ result = a*z
 print(result)
 result = a/z
 print(result)
+print(z.imag/a.imag)
 # output
 #(15.9)
 #(14.6)
 #(-2.0999999999999996+29.04j)
 #(0.062131693569049455+0.00204970535485524j)
+#(15.6)

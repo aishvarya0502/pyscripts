@@ -11,8 +11,8 @@ print(str)
 #multi line
 
 #index of string
-    #right to left + index s='durga' => 0,1,2,3,4
-    #left to right - index s='durga' => -5,-4,-3,-2,-1
+    #right to left => + index s='durga' => 0,1,2,3,4
+    #left to right => - index s='durga' => -5,-4,-3,-2,-1
 a = 'DurgaSoft'
 print(a[0])
 print(a[2])
@@ -30,7 +30,7 @@ print(a[0:4])   #Durg
 print(a[1:4])    #urg
 print(a[2:2])    #no output
 print(a[2:-1])   #rgaSof (begin to end -1 => 2 to -2)
-print(a[-1:3])   # -1 to 2 // no output as -1 is last index thus it does not print there  after************* moving in +ive direction
+print(a[-1:3])   # -1 to 2 // no output as -1 is last index thus it does not print there  after**** moving in +ive direction
 print(a[-1:-3])  #no ouptut , begin value should be lower and end be higher -1 to -4**************
 print(a[-4:-1])  #sof
 print(a[-1:])     # t
@@ -53,12 +53,13 @@ print(len(a))
 b = input("Enter a string")
 i = 0
 for x in b:
-    print('The character at +ive index {} and at -ive index is {} is {}'.format(i,i-len(b),x))
+    print('The character at +ive index {} and at -ive index {} is {}'.format(i,i-len(b),x))
     i += 1
 
+
 c = input("Enter a string : ")
-d = {}
-e = {}
+d = {} #empty dict
+e = {} #empty dict
 for i in range(len(c)):
     d[i] = c[i]
     e[i-len(c)] = c[i]
